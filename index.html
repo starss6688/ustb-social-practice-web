@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鹿耘河套-成果展示</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 全屏通栏蓝色导航栏 -->
+<nav class="navbar navbar-expand-lg header-nav fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2 text-white fw-bold fs-4" href="index.html">
+      <!-- Logo图片，控制高度40px，自动等比例不拉伸 -->
+      <img src="assets/images/logo.png" alt="实践团Logo" style="height:40px;object-fit:contain;">
+      鹿耘河套
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item">
+          <a class="nav-link px-3" href="index.html">首页</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown" href="#">访谈记录</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="interview.html#interview-villager">村民访谈</a></li>
+            <li><a class="dropdown-item" href="interview.html#interview-wang">王书记访谈</a></li>
+            <li><a class="dropdown-item" href="interview.html#interview-ding">丁书记访谈</a></li>
+            <li><a class="dropdown-item" href="interview.html#interview-woman">妇女干部访谈</a></li>
+            <li><a class="dropdown-item" href="interview.html#interview-coop">辣椒合作社负责人访谈</a></li>
+            <li><a class="dropdown-item" href="interview.html#interview-five">五保户访谈</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown" href="#">实地调研</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="survey.html#family">入户调查经济状况</a></li>
+            <li><a class="dropdown-item" href="survey.html#orchard">果园采摘调研</a></li>
+            <li><a class="dropdown-item" href="survey.html#pepper">辣椒地劳作调研</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3" data-bs-toggle="dropdown" href="#">场馆参观</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="visit.html#village-hall">村史馆</a></li>
+            <li><a class="dropdown-item" href="visit.html#rural-hall">乡村振兴主题馆</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#result">实践成果</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 移动端侧边导航 -->
+<div class="offcanvas offcanvas-start text-bg-primary" id="mobileMenu" tabindex="-1">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">导航菜单</h5>
+    <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link text-white" href="#home">首页</a></li>
+      <li class="nav-item mt-2">
+        <a class="nav-link text-white dropdown-toggle" data-bs-toggle="collapse" href="#mobile-interview">访谈记录</a>
+        <div class="collapse ps-4 mt-1" id="mobile-interview">
+          <a class="nav-link text-white py-1" href="interview.html#interview-villager">村民访谈</a>
+          <a class="nav-link text-white py-1" href="interview.html#interview-wang">王书记访谈</a>
+          <a class="nav-link text-white py-1" href="interview.html#interview-ding">丁书记访谈</a>
+          <a class="nav-link text-white py-1" href="interview.html#interview-woman">妇女干部访谈</a>
+          <a class="nav-link text-white py-1" href="interview.html#interview-coop">辣椒合作社负责人访谈</a>
+          <a class="nav-link text-white py-1" href="interview.html#interview-five">五保户访谈</a>
+        </div>
+      </li>
+      <li class="nav-item mt-2">
+        <a class="nav-link text-white dropdown-toggle" data-bs-toggle="collapse" href="#mobile-survey">实地调研</a>
+        <div class="collapse ps-4 mt-1" id="mobile-survey">
+          <a class="nav-link text-white py-1" href="survey.html#family">入户调查经济状况</a>
+          <a class="nav-link text-white py-1" href="survey.html#orchard">果园采摘调研</a>
+          <a class="nav-link text-white py-1" href="survey.html#pepper">辣椒地劳作调研</a>
+        </div>
+      </li>
+      <li class="nav-item mt-2">
+        <a class="nav-link text-white dropdown-toggle" data-bs-toggle="collapse" href="#mobile-visit">场馆参观</a>
+        <div class="collapse ps-4 mt-1" id="mobile-visit">
+          <a class="nav-link text-white py-1" href="visit.html#village-hall">村史馆</a>
+          <a class="nav-link text-white py-1" href="visit.html#rural-hall">乡村振兴主题馆</a>
+        </div>
+      </li>
+      <li class="nav-item mt-2"><a class="nav-link text-white" href="#result">实践成果</a></li>
+    </ul>
+  </div>
+</div>
+
+<main class="container" id="home">
+  <section class="text-center my-5">
+    <h2>青春下乡社会实践活动展示</h2>
+    <div class="title-line"></div>
+    <p class="text-secondary col-lg-8 mx-auto">本页面记录团队下乡访谈、实地调研、场馆参观全部实践纪实，展示青年实践全过程图文资料</p>
+  </section>
+
+  <!-- 访谈分类九宫格（6格，第一板块） -->
+  <section class="my-5">
+    <h3 class="text-center mb-4">基层访谈纪实</h3>
+    <div class="title-line mb-5"></div>
+    <div class="row g-4">
+      <!-- 1 村民访谈 4张图 封面取第一张 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="interview.html#interview-villager" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/interview/采访村民 (1).JPG" alt="村民访谈">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">村民集体访谈</h5>
+            <p class="text-muted small mb-0">实拍照片共4张</p>
+          </div>
+        </a>
+      </div>
+      <!-- 2 王书记访谈 6张 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="interview.html#interview-wang" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/interview/采访王书记 (1).JPG" alt="王书记访谈">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">王书记访谈</h5>
+            <p class="text-muted small mb-0">实拍照片共6张</p>
+          </div>
+        </a>
+      </div>
+      <!-- 3 丁书记访谈 2张 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="interview.html#interview-ding" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/interview/采访丁书记 (1).JPG" alt="丁书记访谈">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">丁书记访谈</h5>
+            <p class="text-muted small mb-0">实拍照片共2张</p>
+          </div>
+        </a>
+      </div>
+      <!-- 4 妇女干部访谈 11张（图片最多） -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="interview.html#interview-woman" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/interview/采访妇女干部 (1).JPG" alt="妇女干部访谈">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">妇女干部访谈</h5>
+            <p class="text-muted small mb-0">实拍照片共11张</p>
+          </div>
+        </a>
+      </div>
+      <!-- 5 辣椒合作社 2张 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="interview.html#interview-coop" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/interview/采访辣椒合作社 (1).JPG" alt="辣椒合作社负责人">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">辣椒合作社负责人</h5>
+            <p class="text-muted small mb-0">实拍照片共2张</p>
+          </div>
+        </a>
+      </div>
+      <!-- 6 五保户访谈 5张 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="interview.html#interview-five" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/interview/采访五保户 (1).JPG" alt="五保户访谈">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">五保户访谈</h5>
+            <p class="text-muted small mb-0">实拍照片共5张</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- 实地调研入口板块 -->
+  <section class="my-5">
+    <h3 class="text-center mb-4">实地产业调研</h3>
+    <div class="title-line mb-5"></div>
+    <div class="row g-4">
+      <!-- 入户调查 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="survey.html#family" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/survey/入户调查 (1).JPG" alt="入户调查">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">农户入户调查</h5>
+            <p class="text-muted small mb-0">实拍照片共1张</p>
+          </div>
+        </a>
+      </div>
+      <!-- 果园调研 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="survey.html#orchard" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/survey/参观果园 (1).JPG" alt="果园调研">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">果园产业参观</h5>
+            <p class="text-muted small mb-0">实拍照片共13张</p>
+          </div>
+        </a>
+      </div>
+      <!-- 辣椒地考察 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="survey.html#pepper" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/survey/辣椒地考察 (1).JPG" alt="辣椒地考察">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">辣椒基地考察</h5>
+            <p class="text-muted small mb-0">实拍照片共11张</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- 场馆参观入口板块 -->
+  <section class="my-5">
+    <h3 class="text-center mb-4">乡村场馆参观</h3>
+    <div class="title-line mb-5"></div>
+    <div class="row g-4">
+      <!-- 村史馆 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="visit.html#village-hall" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/visit/村史馆介绍 (1).JPG" alt="村史馆参观">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">村史馆纪实</h5>
+            <p class="text-muted small mb-0">实拍照片共18张</p>
+          </div>
+        </a>
+      </div>
+      <!-- 乡村振兴主题馆 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="visit.html#rural-hall" class="grid-card card shadow">
+          <img class="grid-img card-img-top" src="assets/images/visit/乡村振兴主题馆 (1).JPG" alt="乡村振兴主题馆">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">乡村振兴主题馆</h5>
+            <p class="text-muted small mb-0">实拍照片共8张</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 成果展示区域 -->
+  <section id="result" class="my-5 py-4 bg-light rounded-3 px-4">
+    <h3 class="text-center mb-3">实践成果汇总</h3>
+    <div class="title-line"></div>
+    <ul class="mt-4 text-secondary">
+      <!--<li>村民、村干部、合作社、五保户全套访谈文稿与录音整理</li>
+      <li>农户入户经济调研台账、果园辣椒种植实地记录</li>
+      <li>村史馆、乡村振兴主题馆参观影像与学习心得</li>
+      <li>活动实拍图集、短视频素材</li>
+      <li>团队完整社会实践调研报告与总结材料</li>-->
+    </ul>
+  </section>
+</main>
+
+<footer class="mt-5 py-4 text-center text-white" style="background:#0F52BA;">
+  <p class="mb-0">北京科技大学鹿耘河套实践团成果展示</p>
+</footer>
+</body>
+</html>
