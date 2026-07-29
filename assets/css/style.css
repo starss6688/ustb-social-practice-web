@@ -1,0 +1,136 @@
+/* 全局基础 */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top:70px;
+}
+.title-line {
+  width:80px;
+  height:3px;
+  background:#0F52BA;
+  margin:12px auto;
+}
+[id] {
+  scroll-margin-top:80px;
+}
+
+/* 顶部导航栏 */
+.header-nav {
+  background-color: #0F52BA;
+  width:100%;
+}
+.header-nav .nav-link {
+  color:#fff;
+  font-size:15px;
+}
+.header-nav .nav-link:hover {
+  color:#c6e0ff;
+}
+.navbar-toggler {
+  border:1px solid #fff;
+}
+.offcanvas {
+  width:280px;
+}
+
+/* Logo样式 */
+.navbar-brand img {
+  max-height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* 图片通用 */
+.photo-item img {
+  height:220px;
+  object-fit:cover;
+  width:100%;
+  border-radius:6px;
+}
+.photo-full img {
+  height:320px;
+  object-fit:cover;
+  width:100%;
+  border-radius:6px;
+}
+.photo-item {
+  margin-bottom:1rem;
+}
+
+/* 说明文本框 */
+.desc-box {
+  background:#f8f9fa;
+  padding:1rem;
+  border-left:4px solid #0F52BA;
+  border-radius:4px;
+  margin:1.5rem 0;
+}
+
+/* 首页卡片样式 */
+.grid-card {
+  transition: 0.2s ease;
+}
+.grid-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(15,82,186,0.15);
+}
+.grid-img {
+  height:180px;
+  object-fit:cover;
+  width:100%;
+}
+
+/* 右侧悬浮目录 仿百度百科 */
+.toc-sidebar {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 220px;
+  max-height: calc(100vh - 130px);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-y: auto;
+  z-index: 99;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.toc-sidebar h5 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+.toc-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.toc-nav li {
+  margin: 4px 0;
+}
+.toc-nav a {
+  display: block;
+  padding: 5px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.toc-nav a:hover {
+  background: #f0f5ff;
+  color: #0F52BA;
+}
+.toc-nav a.active {
+  background: #0F52BA;
+  color: #fff;
+}
+
+/* 移动端隐藏悬浮目录 */
+@media (max-width:991px) {
+  .toc-sidebar {
+    display: none;
+  }
+}
